@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica DOM y Cookies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div id="contenedor-bienvenida"></div>
+    <br>
+
+    <form id="formulario-preferencias">
+        <div>
+            <label for="nombreUsuario">Nombre:</label><br>
+            <input type="text" id="nombreUsuario" name="nombreUsuario" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="colorFondo">Color de Fondo:</label><br>
+            <input type="color" id="colorFondo" name="colorFondo">
+        </div>
+        <br>
+
+        <div>
+            <label for="temaVisual">Tema visual:</label><br>
+            <select id="temaVisual" name="temaVisual">
+                <option value="claro">Modo Claro</option>
+                <option value="oscuro">Modo Oscuro</option>
+            </select>
+        </div>
+        <br>
+
+        <button type="submit">Guardar Preferencias</button>
+        <button type="button" id="btn-restablecer">Restablecer</button>
+    </form>
+
+</body>
+
+</html>
