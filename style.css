@@ -1,7 +1,78 @@
-body.tema-claro {
-    color: #333333;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #f1f5f9;
+    color: #333;
+    font-family: system-ui, sans-serif;
 }
 
 body.tema-oscuro {
-    color: #ffffff;
+    background-color: #1f2937;
+    color: #fff;
+}
+
+#contenedor-bienvenida,
+#formulario-preferencias {
+    width: min(100%, 28rem);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1.5rem #0002;
+}
+
+body.tema-oscuro #contenedor-bienvenida,
+body.tema-oscuro #formulario-preferencias {
+    background-color: #111827;
+}
+
+#contenedor-bienvenida:empty {
+    display: none;
+}
+
+#formulario-preferencias > div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 0.65rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.4rem;
+    font: inherit;
+}
+
+button {
+    margin: 0.25rem 0.4rem 0 0;
+    padding: 0.65rem 0.9rem;
+    border: 0;
+    border-radius: 0.4rem;
+    background-color: #2563eb;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#btn-restablecer {
+    background-color: #64748b;
 }
